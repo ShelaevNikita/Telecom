@@ -92,12 +92,12 @@
             		\phi_1(t) \phi_2(t) \leftrightarrow \int_{-\infty}^{\infty}\phi_1(t) \phi_2(t) e^{-2\pi i\nu t} dt
             		&= \int_{-\infty}^{\infty} \left( \int_{-\infty}^{\infty} \Phi_1(\nu') e^{2\pi i \nu' t} d\nu' \right) \phi_2(t) e^{-2\pi i\nu t} dt \\
            		&= \int_{-\infty}^{\infty} \left( \int_{-\infty}^{\infty} \Phi_1(\nu') \phi_2(t)  e^{2\pi i (\nu - \nu')t} dt \right) d\nu' \\
-            		&= \int_{-\infty}^{\infty} \Phi_1(\nu') \Phi_2(\nu - \nu') \nu' \\
+            		&= \int_{-\infty}^{\infty} \Phi_1(\nu') \Phi_2(\nu - \nu') d\nu' \\
 			&= \Phi_1(\nu) * \Phi_2(\nu)
         		\end{aligned}
     	\]
 
-	\subsection{Перемножение функций}
+	\subsection{Свертывание функций}
 	ПФ свёртки двух функций равно произведению ПФ свертываемых функций.
 	\[
         		\begin{aligned}
@@ -140,7 +140,7 @@
 	Преобразование Фурье обратимо с точностью до знака аргумента. Производя в формулах ПФ и ОПФ замену переменных $\nu' = t$  и $t' = \nu$ получаем что, если $\phi(t) \leftrightarrow \Phi(\nu)$, то:
 	\[
         		\begin{aligned}
-            		\Phi(t) \leftrightarrow \phi(-\nu)
+            		\Phi(t) \leftrightarrow \phi(-\nu) \\
 			\Phi(-t) \leftrightarrow \phi(\nu)
         		\end{aligned}
     	\]
